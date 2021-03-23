@@ -70,6 +70,13 @@ button:hover {
 }
 
 /* Heading */
+
+h1 {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 h3,
 label[for='new-task'] {
   color: #333;
@@ -100,6 +107,10 @@ input[type="text"]:focus {
 
 /* New Task */
 
+fieldset {
+  border: none;
+}
+
 label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
@@ -109,7 +120,7 @@ input#new-task {
   width: 318px;
 }
 
-p > button:hover {
+fieldset > button:hover {
   color: #0fc57c;
 }
 
