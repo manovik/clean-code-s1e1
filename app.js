@@ -9,8 +9,8 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var addButton=document.getElementById("add-new-task");//first button
+var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -42,7 +42,7 @@ var createNewTaskElement=function(taskString){
     checkBox.className="main__input task__checkbox no-outline";
 
     editInput.type="text";
-    editInput.className="main__input task__input no-outline";
+    editInput.className="todo__input main__input task__input no-outline";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit task__edit-btn btn no-outline";

@@ -16,15 +16,15 @@
       </a>
     </header>
     <main class="todo">
-      <fieldset class="todo__new-item new-item-field" id="topSectionForAddingElementToList">
+      <fieldset class="todo__new-item new-item-field">
         <label class="new-item-field__title title" for="new-task">Add Item</label>
         <div class="new-item-field__inner">
           <input class="new-item-field__task-input todo__input no-outline" id="new-task" type="text">
-          <button class="new-item-field__btn btn no-outline">Add</button>
+          <button class="new-item-field__btn btn no-outline" id="add-new-task">Add</button>
         </div>
       </fieldset>
       <h3 class="todo__title title">Todo</h3>
-      <ul class="tasks" id="incompleteTasks">
+      <ul class="tasks" id="incomplete-tasks">
         <li class="task">
           <input class="todo__input task__checkbox no-outline" type="checkbox">
           <label class="task__title">Pay Bills</label>
