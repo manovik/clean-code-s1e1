@@ -33,6 +33,7 @@ body {
 
 .new-item-field__inner {
   display: flex;
+  justify-content: center;
 }
 
 .task__title {
@@ -49,10 +50,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.task {
-  list-style: none;
 }
 
 .btn {
@@ -129,10 +126,9 @@ input[type="text"]:focus {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-}
-
-.task > * {
-  vertical-align: middle;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .task__checkbox {
