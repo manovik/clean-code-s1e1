@@ -27,18 +27,28 @@ body {
 
 .main {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
+}
+
+.new-item-field__inner {
+  display: flex;
 }
 
 .task__title {
   width: 56%;
   display: inline-block;
+  flex-grow: 1
 }
 
 .tasks {
-  margin: 0;
-  padding: 0px;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .task {
@@ -167,12 +177,12 @@ input[type="text"]:focus {
   display: none;
 }
 
-.editMode .task__input {
+.task--edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .task__title {
+.task--edit-mode .task__title {
   display: none;
 }
 

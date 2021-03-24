@@ -19,8 +19,10 @@
       <h1 class="main__title--hidden">Todo App</h1>
       <fieldset class="main__new-item new-item-field" id="topSectionForAddingElementToList">
         <label class="new-item-field__title title" for="new-task">Add Item</label>
-        <input class="new-item-field__task-input main__input no-outline" id="new-task" type="text">
-        <button class="new-item-field__btn btn no-outline">Add</button>
+        <div class="new-item-field__inner">
+          <input class="new-item-field__task-input main__input no-outline" id="new-task" type="text">
+          <button class="new-item-field__btn btn no-outline">Add</button>
+        </div>
       </fieldset>
       <h3 class="main__title title">Todo</h3>
       <ul class="tasks" id="incompleteTasks">
@@ -29,20 +31,20 @@
           <input class="main__input task__checkbox no-outline" type="checkbox">
           <label class="task__title">Pay Bills</label>
           <input class="main__input task__input no-outline" type="text">
-          <button class="edit task__edit-btn btn no-outline">Edit</button>
-          <button class="delete task__remove-btn btn no-outline">
+          <button class="task__edit-btn btn no-outline">Edit</button>
+          <button class="task__remove-btn btn no-outline">
             <img class="task__remove-btn-img" src="./remove.svg" alt="remove button image">
           </button>
         </li>
 
-        <li class="task editMode">
+        <li class="task task--edit-mode">
           <input class="main__input task__checkbox no-outline" type="checkbox">
           <label class="task__title">Go Shopping</label>
           <input class="main__input task__input no-outline"
               type="text"
               value="Go Shopping">
-          <button class="edit task__edit-btn btn no-outline">Save</button>
-          <button class="delete task__remove-btn btn no-outline">
+          <button class="task__edit-btn btn no-outline">Save</button>
+          <button class="task__remove-btn btn no-outline">
             <img class="task__remove-btn-img" src="./remove.svg" alt="remove button image">
           </button>
         </li>
@@ -55,8 +57,8 @@
           <input class="main__input task__checkbox no-outline" type="checkbox" checked>
           <label class="task__title">See the Doctor</label>
           <input class="main__input task__input no-outline" type="text">
-          <button class="edit task__edit-btn btn no-outline">Edit</button>
-          <button class="delete task__remove-btn btn no-outline">
+          <button class="task__edit-btn btn no-outline">Edit</button>
+          <button class="task__remove-btn btn no-outline">
             <img class="task__remove-btn-img" src="./remove.svg" alt="remove button image">
           </button>
         </li>
