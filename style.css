@@ -25,7 +25,9 @@ body {
   font-family: "Fantasy", cursive;
 }
 
-.main {
+/* todo */
+
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -68,12 +70,6 @@ body {
 
 /* Heading */
 
-.main__title--hidden {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
 .title {
   color: #333;
   font-weight: 700;
@@ -84,7 +80,7 @@ body {
   text-transform: uppercase;
 }
 
-.main__input {
+.todo__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,7 +93,7 @@ body {
   color: #888;
 }
 
-input[type="text"]:focus {
+.todo__input:focus {
   color: #333;
 }
 

@@ -15,30 +15,29 @@
         Want more details?
       </a>
     </header>
-    <main class="main">
-      <h1 class="main__title--hidden">Todo App</h1>
-      <fieldset class="main__new-item new-item-field" id="topSectionForAddingElementToList">
+    <main class="todo">
+      <fieldset class="todo__new-item new-item-field" id="topSectionForAddingElementToList">
         <label class="new-item-field__title title" for="new-task">Add Item</label>
         <div class="new-item-field__inner">
-          <input class="new-item-field__task-input main__input no-outline" id="new-task" type="text">
+          <input class="new-item-field__task-input todo__input no-outline" id="new-task" type="text">
           <button class="new-item-field__btn btn no-outline">Add</button>
         </div>
       </fieldset>
-      <h3 class="main__title title">Todo</h3>
+      <h3 class="todo__title title">Todo</h3>
       <ul class="tasks" id="incompleteTasks">
         <li class="task">
-          <input class="main__input task__checkbox no-outline" type="checkbox">
+          <input class="todo__input task__checkbox no-outline" type="checkbox">
           <label class="task__title">Pay Bills</label>
-          <input class="main__input task__input no-outline" type="text">
+          <input class="todo__input task__input no-outline" type="text">
           <button class="task__edit-btn btn no-outline">Edit</button>
           <button class="task__remove-btn btn no-outline">
             <img class="task__remove-btn-img" src="./remove.svg" alt="remove button image">
           </button>
         </li>
         <li class="task task--edit-mode">
-          <input class="main__input task__checkbox no-outline" type="checkbox">
+          <input class="todo__input task__checkbox no-outline" type="checkbox">
           <label class="task__title">Go Shopping</label>
-          <input class="main__input task__input no-outline"
+          <input class="todo__input task__input no-outline"
               type="text"
               value="Go Shopping">
           <button class="task__edit-btn btn no-outline">Save</button>
@@ -47,12 +46,12 @@
           </button>
         </li>
       </ul>
-      <h3 class="main__title title">Completed</h3>
+      <h3 class="todo__title title">Completed</h3>
       <ul class="tasks tasks_completed" id="completed-tasks">
         <li class="task">
-          <input class="main__input task__checkbox no-outline" type="checkbox" checked>
+          <input class="todo__input task__checkbox no-outline" type="checkbox" checked>
           <label class="task__title">See the Doctor</label>
-          <input class="main__input task__input no-outline" type="text">
+          <input class="todo__input task__input no-outline" type="text">
           <button class="task__edit-btn btn no-outline">Edit</button>
           <button class="task__remove-btn btn no-outline">
             <img class="task__remove-btn-img" src="./remove.svg" alt="remove button image">
